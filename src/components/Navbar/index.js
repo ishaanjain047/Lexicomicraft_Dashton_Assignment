@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import DashtoonRoutes from "./DashtoonRoutes.js";
+import { Link } from "react-router-dom";
 const Navbar = ({panels}) => {
   return (
     <div className="navWrapper">
@@ -20,10 +21,14 @@ const Navbar = ({panels}) => {
                   ? "navLink activeLink"
                   : "navLink"
               }
-              // onClick={() => (window.location.pathname = route.linkTo)}
-              onClick={() => (window.location.pathname = route.linkTo)}
             >
+              <Link className={
+                window.location.pathname === "/" + route.linkTo
+                  ? "navLink activeLink"
+                  : "navLink"
+              } to={route.linkTo}>
               {route.name}
+              </Link>
             </div>
           );
         })}

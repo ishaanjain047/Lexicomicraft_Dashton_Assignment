@@ -42,30 +42,68 @@ const PanelGenerator = ({
            return panel;
          })
        );
-    const response = await fetch(
-      "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
-      {
-        headers: {
-          Accept: "image/png",
-          Authorization:
-            "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify(obj),
-      }
-    );
-    const result = await response.blob();
-    let url = URL.createObjectURL(result);
-
-    setPanels((current) =>
-      current.map((panel) => {
-        if (panel.id === id) {
-          return { ...panel, desc: textval, imgsrc: url, loading: false };
+    try{
+      const response = await fetch(
+        "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
+        {
+          headers: {
+            Accept: "image/png",
+            Authorization:
+              "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify(obj),
         }
-        return panel;
-      })
-    );
+      );
+      const result = await response.blob();
+      let url = URL.createObjectURL(result);
+  
+      setPanels((current) =>
+        current.map((panel) => {
+          if (panel.id === id) {
+            return { ...panel, desc: textval, imgsrc: url, loading: false };
+          }
+          return panel;
+        })
+      );
+    }
+    catch(error){
+      setPanels((current) =>
+        current.map((panel) => {
+          if (panel.id === id) {
+            return { ...panel, loading: false };
+          }
+          return panel;
+        })
+      );
+      console.error('Error:', error);
+      alert("The API is currently not responding ! Kindly try later");
+    }
+    // const response = await fetch(
+    //   "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
+    //   {
+    //     headers: {
+    //       Accept: "image/png",
+    //       Authorization:
+    //         "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
+    //       "Content-Type": "application/json",
+    //     },
+    //     method: "POST",
+    //     body: JSON.stringify(obj),
+    //   }
+    // );
+    // const result = await response.blob();
+    // let url = URL.createObjectURL(result);
+
+    // setPanels((current) =>
+    //   current.map((panel) => {
+    //     if (panel.id === id) {
+    //       return { ...panel, desc: textval, imgsrc: url, loading: false };
+    //     }
+    //     return panel;
+    //   })
+    // );
   };
 
   const deletePanel = (panelId) => {

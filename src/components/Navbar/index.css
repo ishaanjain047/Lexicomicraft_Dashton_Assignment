@@ -42,6 +42,9 @@
 .navButton {
   min-width: 40%;
 }
+a{
+  color:white;
+}
 
 @media only screen and (max-width: 600px) {
   .navWrapper {
