@@ -1,0 +1,73 @@
+.comicWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+  color: white;
+  min-height: 100vh;
+}
+.pageHeading{
+  font-size: 5rem;
+  padding: 2rem;
+}
+.comicPanel{
+    width:78%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem;
+}
+.childPanel{
+  flex-basis: 33.33333%;
+  width:30%;
+}
+.failComic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.failText{
+  font-size: 4rem;
+  margin: auto;
+}
+.failImgWrapper{
+  width:50%;
+  margin: auto;
+  padding: 2rem;
+}
+.failImg{
+  width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .comicWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0c0f47;
+    color: white;
+    min-height: 100vh;
+  }
+  .pageHeading{
+    font-size: 3rem;
+  }
+  .comicPanel{
+      width:78%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding:2rem;
+  }
+  .childPanel{
+    flex-basis: 50%;
+    width:33.3333%;
+  }
+  .failText{
+    font-size: 2rem;
+    margin: auto;
+  }
+}

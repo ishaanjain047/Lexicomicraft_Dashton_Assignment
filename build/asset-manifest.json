@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.425cbccb.css",
+    "main.js": "/static/js/main.be45bf20.js",
+    "static/js/787.2aa98dbe.chunk.js": "/static/js/787.2aa98dbe.chunk.js",
+    "static/media/ComicFail.jpg": "/static/media/ComicFail.ff95b9f82cf0bf9ec6f0.jpg",
+    "static/media/BenifitsImg.png": "/static/media/BenifitsImg.7fa276fb966a0aebb325.png",
+    "static/media/Comic.png": "/static/media/Comic.0efc88525a9361867205.png",
+    "static/media/Insert_image.png": "/static/media/Insert_image.5f4a545c12b3ec671fdf.png",
+    "static/media/Rogan-Regular.ttf": "/static/media/Rogan-Regular.cec7c0a2ea8487103017.ttf",
+    "index.html": "/index.html",
+    "main.425cbccb.css.map": "/static/css/main.425cbccb.css.map",
+    "main.be45bf20.js.map": "/static/js/main.be45bf20.js.map",
+    "787.2aa98dbe.chunk.js.map": "/static/js/787.2aa98dbe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.425cbccb.css",
+    "static/js/main.be45bf20.js"
+  ]
+}

@@ -1,0 +1,13 @@
+.HomeWrapper {
+  width: 100%;
+  background:#1e1e1e;
+}
+.homeLandingWrapper {
+  min-height: 100vh;
+}
+.homeNavbar {
+  height: 10%;
+}
+.homeLanding {
+  min-height: 90vh;
+}

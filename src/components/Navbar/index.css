@@ -1,0 +1,65 @@
+.navWrapper {
+  padding: 2.2rem;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.navLogo {
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 800;
+  width: 20%;
+}
+
+.navLinks {
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  text-align: center;
+  width: 40%;
+  color:white;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+}
+
+.activeLink {
+  color: white !important;
+  opacity: 1;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #0096ff;
+}
+.navButtons {
+  justify-content: space-around;
+  display: flex;
+  width: 20%;
+}
+
+.navButton {
+  min-width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navWrapper {
+    flex-direction: column;
+  }
+  .navLogo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    width: 50%;
+    margin:auto;
+    padding: 1.5rem;
+  }
+  .navLinks {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    width: 80%;
+    margin:auto;
+  }
+}

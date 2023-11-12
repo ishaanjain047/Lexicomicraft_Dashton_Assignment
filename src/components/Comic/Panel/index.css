@@ -1,0 +1,19 @@
+.panelWrapper{
+    background: white;
+    padding: 2rem;
+    margin:1rem;
+}
+.panelImg{
+    width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .panelWrapper{
+        background: white;
+        padding: 0.7rem;
+        margin:0.5rem;
+    }
+    .panelImg{
+        width:100%;
+    }
+  }

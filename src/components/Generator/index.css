@@ -1,0 +1,47 @@
+.generatorWrapper{
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding: 2rem;
+}
+
+.generatorHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 4rem;
+    color: white;
+}
+
+.Sub{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size:3rem;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+    .generatorWrapper{
+        padding: 0;
+    }
+    .generatorHeading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        width:100%;
+        padding: 1.5rem;
+    }
+    .Sub{
+        width:80%;
+        /* padding: 1rem; */
+        font-size: 1.5rem;
+        margin:auto;
+    }
+  }
+

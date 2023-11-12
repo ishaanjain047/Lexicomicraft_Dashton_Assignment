@@ -1,0 +1,81 @@
+.panelGeneratorWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addMoreBtnCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.addMoreBtn{
+    border:none;
+    padding: 1.5rem;
+    margin:1rem;
+    border-radius: 10px;
+    background-color: #0096FF;
+    color: white;
+    font-weight: 900;
+}
+.addMoreBtn:hover{
+    opacity:0.8;
+}
+.panelInputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem;
+    width:100%;
+}
+
+.addedPanel{
+    flex-basis: 28%;
+    padding:2rem;
+}
+
+.addAndSubmit{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.finalGenerateBtn{
+    background-color: rgb(200,35,25);
+    color: white;
+    font-weight: 900;
+}
+.submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.submitButton:hover{
+    opacity:0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 1.5rem;
+    }
+    .addMoreBtn{
+        border:none;
+        padding: 1rem;
+        margin:1rem;
+        border-radius: 10px;
+        color: white;
+        font-weight: 900;
+    }
+    .addAndSubmit{
+        width:80%;
+    }
+    .addedPanel{
+        flex-basis:80%;
+    }
+  }

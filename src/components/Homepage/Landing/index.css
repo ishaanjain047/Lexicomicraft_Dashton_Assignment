@@ -1,0 +1,76 @@
+.landingWrapper {
+  min-height: 90vh;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.landingImgWrapper{
+  width:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingImg{
+  width:80%;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px whitesmoke;
+}
+.landingInfo{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.landingHeading1 {
+  width: 100%;
+  font-size: 6.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+}
+.landingHeading2 {
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-align: center;
+  width: 60%;
+  padding: 2rem;
+}
+
+.landingBtn {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .landingWrapper{
+    flex-direction: column;
+  }
+  .landingHeading1{
+    font-size: 2.8rem;
+  }
+  .landingHeading2 {
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    padding: 2rem;
+  }
+  .landingInfo{
+    width:100%;
+    order:3;
+  }
+  .landingHeading2 {
+    width:80%;
+  }
+  .landingImgWrapper{
+    order:1;
+    width:80%;
+  }
+  .landingImg{
+    width:100%;
+  }
+}
