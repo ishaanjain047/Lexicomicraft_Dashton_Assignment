@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import DashtoonRoutes from "./DashtoonRoutes.js";
 import { Link } from "react-router-dom";
-const Navbar = ({panels}) => {
+const Navbar = () => {
   return (
     <div className="navWrapper">
       <div className="navLogo">

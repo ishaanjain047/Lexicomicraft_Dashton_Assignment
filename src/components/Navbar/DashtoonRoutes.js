@@ -1,4 +1,4 @@
-const OpGuruRoutes = [
+const DashtoonRoutes = [
   {
     name: "Home",
     linkTo: "",
@@ -9,4 +9,4 @@ const OpGuruRoutes = [
   },
 ];
 
-export default OpGuruRoutes;
+export default DashtoonRoutes;

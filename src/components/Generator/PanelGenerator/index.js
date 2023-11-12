@@ -80,30 +80,6 @@ const PanelGenerator = ({
       console.error('Error:', error);
       alert("The API is currently not responding ! Kindly try later");
     }
-    // const response = await fetch(
-    //   "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
-    //   {
-    //     headers: {
-    //       Accept: "image/png",
-    //       Authorization:
-    //         "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
-    //       "Content-Type": "application/json",
-    //     },
-    //     method: "POST",
-    //     body: JSON.stringify(obj),
-    //   }
-    // );
-    // const result = await response.blob();
-    // let url = URL.createObjectURL(result);
-
-    // setPanels((current) =>
-    //   current.map((panel) => {
-    //     if (panel.id === id) {
-    //       return { ...panel, desc: textval, imgsrc: url, loading: false };
-    //     }
-    //     return panel;
-    //   })
-    // );
   };
 
   const deletePanel = (panelId) => {

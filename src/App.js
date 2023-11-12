@@ -16,7 +16,6 @@ const newPanelObj = [
   },
 ];
 
-// get kar idhar local storage se 
 let savedPanels = JSON.parse(
   localStorage.getItem('panels')
 );
