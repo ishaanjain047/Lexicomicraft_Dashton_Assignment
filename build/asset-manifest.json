@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.16a9668a.css",
-    "main.js": "/static/js/main.19ea8ce1.js",
+    "main.css": "/static/css/main.ae0605e4.css",
+    "main.js": "/static/js/main.cbf594d8.js",
     "static/js/787.2aa98dbe.chunk.js": "/static/js/787.2aa98dbe.chunk.js",
     "static/media/ComicFail.jpg": "/static/media/ComicFail.ff95b9f82cf0bf9ec6f0.jpg",
     "static/media/BenifitsImg.png": "/static/media/BenifitsImg.7fa276fb966a0aebb325.png",
@@ -9,12 +9,12 @@
     "static/media/Insert_image.png": "/static/media/Insert_image.5f4a545c12b3ec671fdf.png",
     "static/media/Rogan-Regular.ttf": "/static/media/Rogan-Regular.cec7c0a2ea8487103017.ttf",
     "index.html": "/index.html",
-    "main.16a9668a.css.map": "/static/css/main.16a9668a.css.map",
-    "main.19ea8ce1.js.map": "/static/js/main.19ea8ce1.js.map",
+    "main.ae0605e4.css.map": "/static/css/main.ae0605e4.css.map",
+    "main.cbf594d8.js.map": "/static/js/main.cbf594d8.js.map",
     "787.2aa98dbe.chunk.js.map": "/static/js/787.2aa98dbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16a9668a.css",
-    "static/js/main.19ea8ce1.js"
+    "static/css/main.ae0605e4.css",
+    "static/js/main.cbf594d8.js"
   ]
 }
