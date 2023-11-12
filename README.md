@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+The project I made is named Lexicomicraft which is made of Lexi + Comic + Craft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lexi is a famous refrence of text as lexiography and rest we generate comic panels based on text hence it is called LexiComicCraft
 
-## Available Scripts
+Now what would be the common problems faced by the user ?
 
-In the project directory, you can run:
+1. Editing the comic strips already generated
+2. Deleting a comic strip
+3. Not loosing their data after refreshing
 
-### `npm start`
+My app has got them covererd, my app is not only response but provides them complete functionality of the above mentioned problems
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Suppose we provide them with just 10 inputs, then the user doesnt have the flexiblity to use the app, but my app provides that by
+giving delete button and adding new panels
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The data is saved in local storage, so that the client do not have to follow the process again
 
-### `npm test`
+Along with it, is a beautiful UI which the client can use while travelling on the phone too
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Error handling:
 
-### `npm run build`
+Clients are quiet confused when they encounter errors,
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app provides them alerts whenever they make a mistake, that is for example if they try generating comic which less than 10 images, they get an error based on the problem desription
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Whenever the client clicks "My comic" button they get an error that they havent generated any comic
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Note : The app is purely based on React and CSS,I have not included extra libraries like tailwind css, Bootscrap which could make
+my work easy, just to show I am capable of making such assignement without libraries in a small time
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for reading it out.
