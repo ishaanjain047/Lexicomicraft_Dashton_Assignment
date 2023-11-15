@@ -58,7 +58,7 @@ const PanelGenerator = ({
       );
       const result = await response.blob();
       let url = URL.createObjectURL(result);
-  
+      console.log("url is ",url);
       setPanels((current) =>
         current.map((panel) => {
           if (panel.id === id) {
